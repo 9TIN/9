@@ -1,0 +1,74 @@
+/* 基本样式 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* 头部样式 */
+header {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Logo样式 */
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* 导航样式 */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* 自适应样式 */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* 其他样式 */
+section {
+  padding: 20px;
+}
+
+footer {
+  background-color: #f4f4f4;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* 交互样式 */
+#skill-list li:hover {
+  color: #007BFF; /* 鼠标悬停时改变文字颜色 */
+}
+
+/* 你可以根据需要继续添加更多的CSS样式 */
