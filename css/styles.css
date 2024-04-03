@@ -132,3 +132,36 @@ footer {
   bottom: 0;
   width: 100%;
 }
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+相框
+.photo-frame {
+  flex: 0 0 calc(50% - 20px); /* 调整宽度以适应屏幕大小 */
+  margin-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.photo-frame:hover img {
+  transform: scale(1.1); /* 鼠标悬停时放大图片 */
+}
+
+/* 当屏幕宽度较小时，调整相框宽度为100% */
+@media (max-width: 600px) {
+  .photo-frame {
+    flex: 0 0 100%;
+  }
+}
